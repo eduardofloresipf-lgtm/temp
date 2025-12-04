@@ -15,9 +15,9 @@ def user_input_features():
     year = st.number_input("Año", min_value=1700, max_value=2100, value=2024)
     month = st.number_input("Mes (1–12)", min_value=1, max_value=12, value=1)
 
-    ciudades = ["Acapulco": 0,
+    ciudades = {"Acapulco": 0,
     "Acuña": 1,
-    "Aguascalientes": 2,]  
+    "Aguascalientes": 2,}
 
     ciudad_nombre = st.selectbox("Ciudad", ciudades)
     ciudad_encoded = ciudad_map[ciudad_nombre]
