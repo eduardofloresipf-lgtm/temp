@@ -26,6 +26,12 @@ def user_input_features():
     }
 
     return pd.DataFrame(user_data, index=[0])
+    
+ciudades = ["Acapulco", "Acuña", "Aguascalientes"]
+def user_input_features():
+    ciudad_nombre = st.selectbox("Ciudad", ciudades)
+    return ciudad_nombre
+
 
 input_df = user_input_features()
 
