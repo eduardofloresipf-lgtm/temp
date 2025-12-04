@@ -16,9 +16,6 @@ def user_input_features():
     "Acuña": 1,
     "Aguascalientes": 2,}
 
-    ciudad_nombre = st.selectbox("Ciudad", ciudades)
-    ciudad_encoded = ciudad_map[ciudad_nombre]
-
     user_data = {
         "year": year,
         "month": month,
