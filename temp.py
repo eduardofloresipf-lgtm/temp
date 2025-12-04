@@ -4,9 +4,6 @@ import pickle
 
 st.image("cl.jpeg", caption="Predicción de temperatura en México")
 
-with open("model.pkl", "rb") as f:
-    model = pickle.load(f)
-
 st.title("Predicción de temperatura en ciudades de México")
 st.header("Datos de entrada")
 
