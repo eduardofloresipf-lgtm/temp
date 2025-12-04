@@ -46,3 +46,5 @@ input_df = user_input_features()
 
 st.write("Datos de entrada para el modelo:")
 st.write(input_df)
+
+if st.button("Predecir temperatura"): pred = model.predict(input_df) st.success(f"Temperatura estimada: {pred[0]:.2f} °C")
